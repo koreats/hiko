@@ -1,0 +1,43 @@
+{
+  "terminal.integrated.profiles.windows": {
+    "Claude Code (WSL)": {
+      "path": "wsl.exe",
+      "args": ["-e", "bash", "-c", "cd /mnt/c/Users/blues/Downloads/hiko-landing && claude"]
+    },
+    "WSL": {
+      "path": "wsl.exe"
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Claude Code (WSL)",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "workbench.colorTheme": "Default Dark+",
+  "editor.suggest.showSnippets": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "claude.enabled": true,
+  "claude.autoStart": false,
+  "claude.defaultModel": "claude-3-5-sonnet-20241022",
+  "workbench.statusBar.visible": true,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.confirmOnExit": "never",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.env.windows": {
+    "PATH": "${env:PATH};C:\\Windows\\System32\\wsl.exe"
+  },
+  "terminal.integrated.shellArgs.windows": [
+    "-Command",
+    "& {wsl -e bash -c 'cd /mnt/c/Users/blues/Downloads/hiko-landing && claude'}"
+  ],
+  "workbench.commandPalette.experimental.suggestCommands": true,
+  "workbench.commandPalette.preserveInput": true
+} 

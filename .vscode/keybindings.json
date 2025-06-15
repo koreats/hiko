@@ -1,0 +1,31 @@
+[
+  {
+    "key": "ctrl+shift+c",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "wsl -e bash -c \"cd /mnt/c/Users/blues/Downloads/hiko-landing && claude\"\r"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "workbench.action.terminal.new",
+    "args": {
+      "profileName": "Claude Code (WSL)"
+    }
+  },
+  {
+    "key": "ctrl+shift+alt+c",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Start Claude Code"
+  },
+  {
+    "key": "f1",
+    "command": "workbench.action.showCommands",
+    "when": "!inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.showCommands"
+  }
+] 
